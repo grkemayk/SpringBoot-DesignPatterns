@@ -7,7 +7,7 @@ public class FactoryPatternMain {
         try 
         {
             Asus asus = (Asus) ComputerFactory.createComputer(Asus.class);
-            asus.since(1234);
+            asus.since(1997);
             asus.name();
 
             Mac mac = (Mac) ComputerFactory.createComputer(Mac.class);

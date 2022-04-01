@@ -9,7 +9,7 @@ public class annotationMain {
 		ApplicationContext xApplicationContext = new AnnotationConfigApplicationContext(AutomativeConfiguration.class);
 		
 		Car xCar = xApplicationContext.getBean(Car.class);
-		Automative xAutomative = xApplicationContext.getBean(Automative.class);
+		Automative xAutomative = (Automative )xApplicationContext.getBean("myautomative");
 
 		//System.out.println(xCar.strCarName);
 		System.out.println(xAutomative);

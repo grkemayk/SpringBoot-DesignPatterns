@@ -13,7 +13,7 @@ public class AutomativeConfiguration {
 		xCar.strCarName="Ford";
 		return xCar;
 	}
-	@Bean
+	@Bean("myautomative")
 	public Automative automative()
 	{
 		Automative xAutomative = new Automative();

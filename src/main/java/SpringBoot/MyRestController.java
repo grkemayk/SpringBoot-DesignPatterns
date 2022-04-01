@@ -3,34 +3,35 @@ package SpringBoot;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/SpringBoot")
+@RequestMapping(value="/SpringBoot")
 public class MyRestController {
 	
-	@PostMapping("/postExample/{TableName}")
+	@PostMapping(value="/postExample/{TableName}")
 	private void vPost(@PathVariable(value="TableName") String  strTableName, @RequestBody PostClass xPostClass)//Model ile JSON keylerini kendizi mapler.
 	{
 		System.out.println(strTableName);
 		System.out.println(xPostClass.PostData);
 	}
-	@GetMapping("/getExample")
+	
+	@GetMapping(value="/getExample")
 	private void vGet(@RequestParam(value="ln", defaultValue="Görkem") String strName)//?ln=Aykac
 	{
 		System.out.println(strName);
 	}
 	
-	@DeleteMapping("/deleteExample/{UserId}")
+	@DeleteMapping(value="/deleteExample/{UserId}")
 	private void vDelete(@PathVariable(value="UserId") String strUserId)
 	{
 		System.out.println(strUserId);
 	}
 	
-	@PatchMapping("patchExample/{UserId}")
+	@PatchMapping(value="patchExample/{UserId}")
 	private void vPatch(@PathVariable(value="UserId") String strUserId)
 	{
 		System.out.println(strUserId);
 	}
 	
-	@PutMapping("putExample/{UserId}")
+	@PutMapping(value="putExample/{UserId}")
 	private void vPut(@PathVariable(value="UserId") String strUserId)
 	{
 		System.out.println(strUserId);
