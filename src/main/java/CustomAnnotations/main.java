@@ -22,7 +22,7 @@ public class main {
 	@CustomAnnotation(value=10)  
 	public static void vAnnatationExample()
 	{
-		System.out.println("Annotation2");
+		System.out.println("Annotation");
 	}
 	
 	public static void vGetAnnotation() throws Exception
