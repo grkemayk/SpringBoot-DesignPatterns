@@ -1,9 +1,12 @@
 package SpringBoot.annotations;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 @Configuration
+
 public class AutomativeConfiguration {
 	
 	@Bean
@@ -20,7 +23,7 @@ public class AutomativeConfiguration {
 		xAutomative.strAutomativeName="Vasita";
 		return xAutomative;
 	}
-
+	
 	
 
 }
