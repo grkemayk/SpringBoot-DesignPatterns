@@ -1,6 +1,7 @@
 package SpringBoot.annotations;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 @Component(value="componentCar")
 public class Car {

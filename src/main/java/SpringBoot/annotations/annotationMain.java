@@ -11,7 +11,8 @@ public class annotationMain {
         = new AnnotationConfigApplicationContext(AutomativeConfiguration.class);
 		
 		context.scan("SpringBoot.annotations");//Yaratılmış componentlerin oldugu pacage ismini verirsek orayı tarayıp bunları bean olarak yaratır.
-
+		context.refresh();
+		
 		Car xCarComponent = (Car)context.getBean("componentCar");
 		System.out.println(xCarComponent.strCarName);
    		
